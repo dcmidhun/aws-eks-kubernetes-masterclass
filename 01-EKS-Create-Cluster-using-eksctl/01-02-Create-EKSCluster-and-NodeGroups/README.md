@@ -64,7 +64,7 @@ eksctl create nodegroup --cluster=eksdemo1 \
                         --nodes-max=4 \
                         --node-volume-size=20 \
                         --ssh-access \
-                        --ssh-public-key=kube-demo \
+                        --ssh-public-key=eks-demo \
                         --managed \
                         --asg-access \
                         --external-dns-access \
@@ -116,7 +116,7 @@ kubectl config view --minify
 - Login to worker node
 ```
 # For MAC or Linux or Windows10
-ssh -i kube-demo.pem ec2-user@<Public-IP-of-Worker-Node>
+ssh -i eks-demo.pem ec2-user@3.237.50.165
 
 # For Windows 7
 Use putty
