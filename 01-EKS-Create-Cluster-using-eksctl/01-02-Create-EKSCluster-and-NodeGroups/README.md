@@ -59,8 +59,8 @@ eksctl create nodegroup --cluster=eksdemo1 \
                         --region=us-east-1 \
                         --name=eksdemo1-ng-public1 \
                         --node-type=t3.medium \
-                        --nodes=2 \
-                        --nodes-min=2 \
+                        --nodes=3 \
+                        --nodes-min=3 \
                         --nodes-max=4 \
                         --node-volume-size=20 \
                         --ssh-access \
